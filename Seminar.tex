@@ -67,22 +67,25 @@ Bemerkung:
 	\\ 
 \textit{Sei K ein Zahlkörper. Wir definieren die} Dedekindsche Zetafunktion \textit{$\zeta_{\textit{K}}$ zum Zahlkörper K durch}
 	
-$$\zeta_{\textit{K} \textit{(s)}}:= \prod_{\mathfrak{p}}\frac{1}{1- N_{\textit{K}\mid\Q}(\mathfrak{p})^\textit{(-s)}}$$, 
-	
+$$\zeta_{\textit{K} \textit{(s)}}:= \prod_{\mathfrak{p}}\frac{1}{1- N_{\textit{K}\mid\Q}(\mathfrak{p})^\textit{(-s)}}$$
 \textit{wobei sich das Produkt über alle Primideale} $\langle0\rangle\subsetneq \mathfrak{p} \subseteq O_{\textit{K}}$ \textit{erstreckt}. Wir definieren $N_{\textit{K}|\Q}(\mathfrak{p}) := | O_{\textit{K}}|$ und auch $N_{\textit{K}\mid\Q}(\mathfrak{p})^\textit{(-s)}:=exp(-\log(N_{\textit{K}\mid\Q}(\mathfrak{p}))\cdot \textit{s})$
-
+\\
+\\
 \textbf{1.2 Satz }
 \\
 Für Zahlkörper \textit{K} = $\Q$ stimmt die Dedekindsche Zetafunktion mit der Riemanschen Zetafunktion überein.
 \\
-\textbf{Beweis:}
+\\
+Beweis:
 \\
 Es ist $O_\textit{K} = \mathbb{Z}$, also sind die Primideale $\langle0\rangle\subsetneq \mathfrak{p} \subseteq O_{\textit{K}}$ gerade jene Haupideale $\langle \textit{p}\rangle\subseteq\Z$, die von Primzahlen \textit{p} erzeugt werden. Führen wir diesen Gedanken weiter so gilt $N_{\Q\mid\Q}(\langle \textit{p}\rangle) = | \mathbb{Z}/\langle \textit{p}\rangle| = \textit{p}$, also erhalten wir  $$\zeta_{\Q} \textit{(s)}= \prod_{\textit{p}} \frac{1}{1-\textit{p}^\textit{(-s)}} = \zeta \textit{(s)} $$
 \\
 \\
 \textbf{Definition Unendliches Produkt}
 \\
+\\
 Sei $(a_{\nu})\subset \C$. Das Unendliche Produkt $\prod_{\nu = 1 }^{\infty}(a_{\nu})$ existiert, falls gilt:
+\\
 \\
 (1) Entweder sind alle $a_{\nu}\neq 0$, es existiert der Grenzwert $ a := \lim \prod_{\nu = 1}^{n} (a_{\nu})$ und es ist $a \neq 0$
 \\
@@ -94,11 +97,14 @@ Sei $(a_{\nu})\subset \C$. Das Unendliche Produkt $\prod_{\nu = 1 }^{\infty}(a_{
 \\
 (Konvergenz von unendlichen Produkten)
 \\
-Das Unendliche Produkt $\prod_{\nu = 1 }^{\infty}(a_{\nu})$ existiere. Dann gilt :
+Das Unendliche Produkt $\prod_{\nu = 1 }^{\infty}(a_{\nu})$ existiere. Dann gilt:
+\\
 \\
 (1)$\prod_{\nu = 1}^{\infty}a_{\nu} = 0$ genau dann, wenn mindestens ein $a_{\nu}$ gleich Null ist.
 \\
+\\
 (2)Die Folge $(a_{\nu})$ ist "1-Folge", das heißt es ist $\lim_{\nu \rightarrow\infty}a_{\nu} = 1$
+\\
 \\
 \textbf{Konstruktion des Logarithmus im Komplexen}
 \\
@@ -126,19 +132,17 @@ Eine Reihe von Funktionen $f_{1}+f_{2}+f_{3}+....$ $f_{n}: D\rightarrow \C $ fü
 \\
 \textbf{Identitätssatz}
 \\
-Seien $f$ und $g$ holomorphe Funktionen auf einer Umgebung U von $z_{0}$ und sei $z_{0}$ ein Häufungspunkt der Koinzidenzmenge  $\{ z \in U  |  f(z) = g(z) \}$, dann existiert eine Umgebung V von $z_{0}$mit $f$z) = $g$(z) auf ganz V.
+Seien $f$ und $g$ holomorphe Funktionen auf einer Umgebung U von $z_{0}$ und sei $z_{0}$ ein Häufungspunkt der Koinzidenzmenge  $\{ z \in U  |  f(z) = g(z) \}$, dann existiert eine Umgebung V von $z_{0}$mit $f$(z) = $g$(z) auf ganz V.
 \\
 \\
 \textbf{Hilfslemma (1)} 
 \\
 Abschätzung $ |Log(1+z)|\leq 2|z|$ für alle $z \in \C mit |z| \leq \frac{1}{2}$
 \\
-
+\\
 Beweis:
 $$|\Log(1+z)|= |\sum_{n = 1}^\infty (-1)^{(n-1)}\frac{z^{n}}{n}|\leq|z|\sum_{n = 0}^\infty\frac{|z|^{n}}{n + 1} < |z|\cdot (\frac{1}{1}+\frac{1}{2\cdot 2}+\frac{1}{3 \cdot2^2}+...+\frac{1}{(n+1)\cdot2^(n)}) = 2\cdot|z| $$wobei bei dem letzten Gleichheitszeichen der Wert der geometrischen Reihe benutzt wurde. Nämlich $$\sum_{n=0}^{\infty}\frac{1}{(n+1)\cdot2^{(n)}} < \sum_{n=0}^{\infty}\frac{1}{2^{(n)}} = \sum_{n=0}^{\infty}(\frac{1}{2})^n = \frac{1}{1-(\frac{1}{2})} = 2 $$
 \\ 
-aus betrag von fn von z kleiner 1/2 folgt 1+fn(z) ist teil von C ohne R kleiner gleich null
-
 
 
 \textbf{Lemma}
@@ -149,12 +153,15 @@ $D\subseteq\C$.\textit{Dann existieren für jeden Punkt $ z \in \C$ eine offene 
 \\
 \textbf{Beweis}
 \\
-Es ist $\Log( 1 + f_{n}(z))$ für alle $z \in U $ und $n \geq N$definiert, da aus ////////////////////////////////////
+\textbf{Hilfslemma}
 \\
-\\
-\\
- $(1 + f_{n}(z)) \in \C \setminus \R_{\leq 0 }$ gilt. Zeige weiter $F_{N}(z) := \sum_{n = N}^\infty \Log( 1 + f_{n}(z))$ ist normal konvergent auf U. Dies folgt daraus, dass $| Log( 1 + z) | \leq 2|z| $ für $z \in \C mit |z| \leq \frac{1}{2}$ nach Hilfslemma (1) und der Tatsache das.//////////////////////////////////
+Aus $|f_n(z)|\leq \frac{1}{2}$ folgt $f_n(z) \in \C\backslash\R_{\leq 0}$.Ist $|f_n(z)|\leq \frac{1}{2}$ so folgt. $f_n(z)\leq +\frac{1}{2}$ oder $f_n(z)\leq -\frac{1}{2}$. Im ersten Fall und zweiten Fall folgt mit der Addition von 1, der Wurzeldarstellung und deren Multiplikativität des komplexen Betrag und dessen positiven Definitheit, dass wir uns nie im reell negativen Zahlbereich befinden. Wäre $f_n(z)=0$ ist das wiederum aufgrund der Definitheit des Betrags $|f_n(z)|=0$und $f_n(z)+1$ durch die Addition mit 1 wieder positiv und reell.
 
+Es ist $\Log( 1 + f_{n}(z))$ für alle $z \in U $ und $n \geq N$definiert, da aus der obiger Betrachtung hervorgeht, dass $1+f_n(z)$ auf der Einschränkung auf der Log definiert ist, operiert.
+\\
+\\
+\\
+ $(1 + f_{n}(z)) \in \C \setminus \R_{\leq 0 }$ gilt. Zeige weiter $F_{N}(z) := \sum_{n = N}^\infty \Log( 1 + f_{n}(z))$ ist normal konvergent auf U. Dies folgt daraus, dass $| Log( 1 + z) | \leq 2|z| $ für $z \in \C mit |z| \leq \frac{1}{2}$ nach Hilfslemma (1) und der Tatsache das mit der Abschätzung von $|Log(1+z)| \leq 2|z|$ mit $|f_n(z)|\leq \frac{1}{2}$ genau der Definition der Normalen Konvergenz entspricht.
 Insbesondere stellen $F_{N}$ und $e^{F_{N}}$ holomorphe Funktionen dar, da Holomorphie unter Bildung von Summen, Produkten und Verkettungen erhalten bleibt. Für beliebige $z \in \C $ und $m\leq N$ gilt, dass $$\prod_{n = 1 }^{m}( 1 + f_{n}(z)) = \prod_{n = 1}^{N - 1}( 1 + f_{n}(z))\cdot\prod_{n = N}^{m}( 1 + f_{n}(z))= \prod_{n = 1}^{N - 1}( 1 + f_{n}(z))\cdot\prod_{n = N}^{m}(e^{Log( 1 + f_{n}(z)}) $$ $$= \prod_{n = 1}^{N - 1}( 1 + f_{n}(z))\cdot\prod_{n = N}^{m}(e^{\sum_{n = N}^{m}Log( 1 + f_{n}(z)})$$wobei hier benutzt wurde, dass $e^{F_{n}}$ auf der bereits oben angesprochenen Einschränkung, konform mit dem komplexen Logarithmus agiert. Mit der Stetigkeit der Exponentialfunktion folgt,$$\lim_{m\rightarrow\infty}\prod_{n=1}^m ( 1 + f_{n}(z)) =\prod_{n = 1}{N - 1}(1 + f_{n}(z))\cdot e^{F_{N}(z)}$$ für alle $z \in U$ gilt. Durch die Holomorphie von $(1+ f_{n})$ für $1 \leq n \leq N - 1$ und $e^{F_{n}}$ und dem Umstand, dass endliche Produkte holomorpher Funktionen wiederum holomorph sind, stellt $$\prod_{n =1}^{\infty}(1 +f_n (z))$$ als unendliches Produkt eine holomorphe Funktion -nicht nur für alle $z_0$ auf U- sondern aufgrund der Offenheit der Umgebung U auf ganz D, dar.
 \\
 \\
@@ -167,7 +174,7 @@ Sei K ein Zahlkörper. Dann konvergiert das unendliche Produkt $$\zeta_{\textit{
 Beweis:
 \\
 \\
-Der Audruck
+Der Ausdruck
 $$\zeta*_{\textit{K} \textit{(s)}}= \prod_{\mathfrak{p}}1- N_{\textit{K}\mid\Q}(\mathfrak{p})^\textit{(-s)}$$ für $s \in \C$ mit $Re(s) > 1$ konvergiert, beziehungsweise ist auf diesem Gebiet holomorph.
 Zunächst ist es wichtig zu sehen, dass keiner der Faktoren $ 1- N_{K|\Q}(\mathfrak{p})^{(-s)}$eine Nullstelle in der Menge $s \in \C$ mit Re(s) > 1besitzt.
 \\
@@ -204,14 +211,19 @@ wobei sich die Summation in $\sum_{\mathfrak{J}}$ über alle Ideale $\langle0\ra
 \\
 Beweis:
 \\
-Zur Vereinfachung, führt man eine beliebige Nummerierung auf der Menge aller Primideale $\langle0\rangle\subsetneq \mathfrak{p} \subseteq O_{\textit{K}}$ ein. Diese hat die Form $$\{\langle0\rangle\subsetneq \mathfrak{p} \subseteq O_{\textit{K}} Primideal \}=\{\mathfrak{p}_1,\mathfrak{p}_2,\mathfrak{p}_3...\}$$. Die Abzählbarkeit dieser Menge folgt aus: //////////////////////////////////
-\\/////////
+Zur Vereinfachung, führt man eine beliebige Nummerierung auf der Menge aller Primideale $\langle0\rangle\subsetneq \mathfrak{p} \subseteq O_{\textit{K}}$ ein. Diese hat die Form $$\{\langle0\rangle\subsetneq \mathfrak{p} \subseteq O_{\textit{K}} Primideal \}=\{\mathfrak{p}_1,\mathfrak{p}_2,\mathfrak{p}_3...\}$$Die Abzählbarkeit dieser Menge folgt aus: 
+\\
+?????Angenommen es gibt eine nichtleere Menge $M$ von Idealen für die nicht gilt, dass die Menge der Primideale in einem $O_K$, welcher noetherscher Integritätsring ist, abzählbar ist. Da $O_K$ noethersch, folgt es existiert ein maximales Ideal $a$ in $M$. Dieses kann kein Primideal sein, das heißt es gibt Elemente $b_1,b_2$ in $O_K$ mit $b_1b_2 \in a$ aber $b_1,b_2 \notin a$. Setzte $a_1=(b_1)+a$, $a_2=(b_2)+a$, so ist a $\subsetneq a_1$ und $a \subsetneq a_2$ und $a_1a_2 \subsetneq a$. Aus Maximalitätsgründen enthalten $a_1$ und $a_2$ Produkte von Primidealen, deren Produkte wiederum in $a$ liegen.Widerspruch.????
+\\
 Sei weiter $s \in \C$ mit $Re(s) > 1$ beliebig, dann ist mit $N_{K\mid \Q}\leq 2$ für jedes $m \in \N$, analog dem Beweis (siehe oben). So folgt:$$\prod_{m=1}^{n}\frac{1}{1-N_{K\mid \Q}(\mathfrak{p}_m)^{(-s)}} =\prod_{m=1}^{n}\sum_{k=0}^{\infty}(N_{K\mid \Q}(\mathfrak{p}_m))^{-k\cdot(s)}=\prod_{m=1}^{n}\sum_{k=0}^{\infty}(N_{K\mid \Q}(\mathfrak{p}_m^k))^{(-s)}$$
 Daraus resultiert mit Anwendung der Geometrischen Reihe auf$(N_{K\mid \Q}(\mathfrak{p}_m^k))^{(-s)} < 1$, dass das Produkt absolut konvergiert, da es Produkt absolut konvergenter Reihen ist. Mithilfe des Umordnungssatzes für absolut konvergente Reihen und der Mulitplikativität der Norm spricht dann:
 $$\prod_{m=1}^{n}\sum_{k=0}^{\infty}(N_{K\mid \Q}(\mathfrak{p}_m^k))^{(-s)}=1+\sum_{j=1}^{n}\sum N_{K\mid \Q}(\mathfrak{p}_{m_1}^{\alpha_1})^{(-s)}\cdot\cdot\cdot(N_{K\mid \Q}\mathfrak{p}_{m_j}^{\alpha_j})^{(-s)}$$ $$=1+\sum_{j=1}^{n}\sum N_{K\mid \Q}(\mathfrak{p}_{m_1}^{\alpha_1}\cdot\cdot\cdot\mathfrak{p}_{m_j}^{\alpha_j})^{(-s)}$$
 wobei sich die unbeschriftete Summe über alle Teilmengen $\{m_{1},...,m_{j}\}\subseteq \{ 1,...,n\}$ und alle $(\alpha_1,...,\alpha_j)$ erstreckt. Mit $n \rightarrow \infty$ folgt mit der vorherigen Proposition, dass $$1+\sum_{j=1}^{\infty}\sum N_{K\mid \Q}(\mathfrak{p}_{m_1}^{\alpha_1}\cdot\cdot\cdot\mathfrak{p}_{m_j}^{\alpha_j})^{(-s)}$$
-Aufgrund der eindeutigen Primidealzerlegung in $O_K$ und dass $\N_K(O_K)^{-s}=1$ tritt jedes Ideal $\langle0\rangle\subsetneq \mathfrak{p} \subseteq O_{\textit{K}}$ genau einmal als $\mathfrak{p}_{m_1}^{\alpha_1}\cdot\cdot\cdot\mathfrak{p}_{m_j}^{\alpha_j}$ genau einmal auf. Wieder aufgrund der Umordnung, folgt daraus $$\zeta_{K}(s) = \sum_{\mathfrak{J}}\frac{1}{(N_{K\mid\Q}(\mathfrak{J}))^s}=\sum_{n=1}^{\infty}\frac{a_n}{n^s}$$ und im Falle K = $O_K$ gibt es für jede natürliche Zahl genau ein Ideal mit Norm n, nämlich $\langle n\rangle=n\Z\subseteq \Z$, daher gilt $a_n=1$ für alle $n\in \N$. So folgt insbesondere: $$\zeta_{K(s)}= \sum_{n=1}^{\infty}\frac{1}{n^s}$$
-
+Aufgrund der eindeutigen Primidealzerlegung in $O_K$ und dass $\N_K(O_K)^{-s}=1$ tritt jedes Ideal $\langle0\rangle\subsetneq \mathfrak{p} \subseteq O_{\textit{K}}$ genau einmal als $\mathfrak{p}_{m_1}^{\alpha_1}\cdot\cdot\cdot\mathfrak{p}_{m_j}^{\alpha_j}$ genau einmal auf. Wieder aufgrund der Umordnung, folgt daraus $$\zeta_{K}(s) = \sum_{\mathfrak{J}}\frac{1}{(N_{K\mid\Q}(\mathfrak{J}))^s}=\sum_{n=1}^{\infty}\frac{a_n}{n^s}$$ und im Falle K = $\Q$ gibt es für jede natürliche Zahl genau ein Ideal mit Norm n, nämlich $\langle n\rangle=n\Z\subseteq \Z$, daher gilt $a_n=1$ für alle $n\in \N$. So folgt insbesondere: $$\zeta_{K(s)}= \sum_{n=1}^{\infty}\frac{1}{n^s}$$
+\textbf{Definition }
+Aus Vortrag 8 existierender Gruppenhomomorphismus als Funktion aufgefasst $\chi_k \colon \N \rightarrow \{-1,0,1 \}$, wobei man für $n \in \N$ schreibt, dass $$\chi_K=\begin{cases}0 \ falls \ ggT(n,\Delta_K) >1,\\\chi_{K}(\bar{n})\ falls\ ggT(n,\Delta_K) =1\end{cases}$$
+\\
+\\
 \textbf{Theorem}
 \\
 \textit{Sei $K=\Q(\sqrt{d})$ ein quadratischer Zahlkörper. Dann definiert das Euler Produkt $$L(s,\chi_K) := \prod_{p}\frac{1}{1-\chi_K(p)p^{(-s)}} $$ eine holomorphe Funktion $L(s,\chi_K) \colon \{s \in \C \colon Re(s) > 1\} \rightarrow \C$, und es gilt $$\zeta_K(s) = \zeta(s)\cdot L(s,\chi_K) $$ für alle }$s \in \C$ mit Re(s) > 1. Man nennt $L(\cdot,\chi_k)$ die \textit{L-Funktion zum Gruppenhomomorphismus $\chi_K$}.
@@ -219,37 +231,44 @@ Aufgrund der eindeutigen Primidealzerlegung in $O_K$ und dass $\N_K(O_K)^{-s}=1$
 \\
 Beweis: 
 \\
+\\
 Wenn $$\prod_{\mathfrak{p},p \in \mathfrak{p}}\frac{1}{(1- N_{K\mid \Q}(\mathfrak{p}))^{(-s)}}= \frac{1}{1-p^{-s}}\cdot\frac{1}{1-\chi_k(p)p^{-s}}$$ für jede Primzahl $p$ gilt, dann folgt daraus $$L(s,\chi_K)= \zeta_K(s)\cdot \zeta(s)^{-1}$$ für alle $s \in \C$ mit $Re(s)>1$ gilt, da $\zeta(s) \neq 0$. Dadurch ist $$L(\cdot,\chi_K)= \zeta_K\cdot \zeta^{-1}\colon \{s \in \C \colon Re(s)>1\}\rightarrow \C$$ eine holomorphe Funktion.
 \\
 Fallunterscheidung
 \\
 Fall 1: $O_K= \Z[\sqrt{-d}]$
+\\
 Betrachte also $d\equiv2,3 (\mod 4)$
-Die Primideale $\mathfrak{p} \subseteq O_K$, die $p$ enthalten, entsprechen genau den Primidealen im Ring $$O_K /\langle p\rangle \cong \Z[X] /\langle X^2-d,p\rangle \cong (\Z/p\Z)[X]/\langle X^2-\bar{d}\rangle $$, da //////////////
+Die Primideale $\mathfrak{p} \subseteq O_K$, die $p$ enthalten, entsprechen genau den Primidealen im Ring $$O_K /\langle p\rangle \cong \Z[X] /\langle X^2-d,p\rangle \cong (\Z/p\Z)[X]/\langle X^2-\bar{d}\rangle $$da //////////////
 /////////
 \\
 Fall 1.1:
 \\
-Angenommen $p | \Delta_K$. Das bedeutet im Fall $d \equiv2,3 (\mod 4)$ das entweder $p = 2$ oder $p|d$. Im ersten Fall ist $X^2-\bar{d} = (X-\bar{d})^2 \in (\Z/2\Z)[X]$, da ///////////////////////////
+Angenommen $p | \Delta_K$. Das bedeutet im Fall $d \equiv2,3 (\mod 4)$ das entweder $p = 2$ oder $p|d$. Im ersten Fall ist $X^2-\bar{d} = (X-\bar{d})^2 \in (\Z/2\Z)[X]$.
 \\
 Im zweiten Fall ist $X^2-\bar{d} = X^2 \in (\Z/p\Z)[X]$, also hat das Polynom $X^2-\bar{d} \in (\Z/p\Z)$ auf jeden Fall eine doppelte Nullstelle in $\Z/p\Z$. Vermöge der Isomorphismus von oben, bedeutet das einerseits, dass $\langle p\rangle \subseteq O_K$ kein Primideal ist und andererseits, dass es ein eindeutiges Primideal $\mathfrak{p} \subseteq O_K$ mit $p \in \mathfrak{p}$ gibt, da/////////////////////////////////
 \\
 \\
 In Anbetracht der der eindeutigen Primfaktorzerlegung kann das nur bedeuten, dass in $\langle p\rangle =\mathfrak{p}^k$ für ein $k\geq 2$ gilt. Da aber $p^2=N_{K\mid \Q}(\langle p\rangle)=N_{K\mid \Q}(\mathfrak{p}^k) =N_{K\mid \Q}(\mathfrak{p})^k $gilt, folgt aus der eindeutigen Primzfaktorzerlegung in $\Z$, dass $k = 2$ und $N_{K\mid\Q}(\mathfrak{p}=p)$. So gilt für die linke Seite $\frac{1}{1-p^{-s}}$ und durch die rechte Seite $$\frac{1}{1-p^{-s}}\cdot \frac{1}{1-0\cdot p^{-s}}=\frac{1}{1-p^{-s}}$$ die Gleichheit beider Seiten.
 \\
-Fall 1.2.Angenommen $p \nmid \Delta_K$ und $\chi(\bar{p})=(\frac{\Delta_K}{p})= 1$. Da $\Delta_K = 4d$, folgt daraus, dass $$(\frac{d}{p})=(\frac{2}{p})^2\cdot (\frac{d}{p})=(\frac{4d}{p})=(\frac{\Delta_K}{p})=1$$ dann liefert die Definition des Legendre Symbols, dass $\bar{d} \in (\Z/p\Z)^\times$ ein Quadrat ist, sagen wir $\bar{d}=\bar{y}^2$ für ein $y \in \Z, p\nmid y$. Das ergibt, dass $$X^2-\bar{d}=(X-\bar{y})(X+\bar{y})$$ in $(\Z/p\Z)[X] $gilt, also dass $X^2-\bar{d}$ zwei verschiedene Nullstellen in $\Z/p\Z$ hat. Das bedeutet, dass es genau zwei verschiedene Primideale in $O_K$ gibt, die $p$ enthalten, und wie in (Fall 1.1), dass diese Norm $p$ haben. Somit ist die linke Seite gegeben durch $(\frac{1}{1-p^{-s}})^2$, die rechte Seite durch $$\frac{1}{1-p^{-s}}\cdot\frac{1}{1-1\cdot p^{-s}}=(\frac{1}{1-p^{-s}})^2$$ wiederum gleich.
 \\
-Fall 1.3.Angenommen $p \nmid \Delta_K$ und $\chi(\bar{p})=(\frac{\Delta_K}{p})= -1$. Wie in (Fall 1.2) folgt $(\frac{d}{p})=-1$, also dass $\bar{d} \in (\Z/p\Z)^\times$ kein Quadrat ist. Das bedeutet aber, dass das Polynom $X^2-\bar{d} \in (\Z/p\Z)[X] $ keine Nullstelle in $\Z/p\Z$ besitzt. Es ist //////////////////////////////////////////////.Damit ist das Polynom irreduzibel. Daraus folgt aber $(\Z/p\Z)[X]/\langle X^{2}-\bar{d}\rangle$ ist Körper. Also trifft wegen des Isomorphismus auf $O_K/\langle p\rangle$ zu, Das macht das von $p$ erzeugte Ideal in $O_K$ zu einem maximalen und insbesondere zu einem Primideal. Somit haben wir wieder für die linke Seite: $\frac{1}{1-(p^{2})}^{-s}=\frac{1}{1-(p)}^{-2s}$ und die rechte Seite stimmt damit überein mit $$\frac{1}{1-(p^{-s})}\cdot\frac{1}{(1-(-1)1p^{-s})}=\frac{1}{(1-p^{-s}(1+p^{-s})}=\frac{1}{1-p^{-2s}}$$.
+Fall 1.2
+\\
+Angenommen $p \nmid \Delta_K$ und $\chi(\bar{p})=(\frac{\Delta_K}{p})= 1$. Da $\Delta_K = 4d$, folgt daraus, dass $$(\frac{d}{p})=(\frac{2}{p})^2\cdot (\frac{d}{p})=(\frac{4d}{p})=(\frac{\Delta_K}{p})=1$$ dann liefert die Definition des Legendre Symbols, dass $\bar{d} \in (\Z/p\Z)^\times$ ein Quadrat ist, sagen wir $\bar{d}=\bar{y}^2$ für ein $y \in \Z, p\nmid y$. Das ergibt, dass $$X^2-\bar{d}=(X-\bar{y})(X+\bar{y})$$ in $(\Z/p\Z)[X] $gilt, also dass $X^2-\bar{d}$ zwei verschiedene Nullstellen in $\Z/p\Z$ hat. Das bedeutet, dass es genau zwei verschiedene Primideale in $O_K$ gibt, die $p$ enthalten, und wie in (Fall 1.1), dass diese Norm $p$ haben. Somit ist die linke Seite gegeben durch $(\frac{1}{1-p^{-s}})^2$, die rechte Seite durch $$\frac{1}{1-p^{-s}}\cdot\frac{1}{1-1\cdot p^{-s}}=(\frac{1}{1-p^{-s}})^2$$ wiederum gleich.
+\\
+\\
+Fall 1.3
+\\
+Angenommen $p \nmid \Delta_K$ und $\chi(\bar{p})=(\frac{\Delta_K}{p})= -1$. Wie in (Fall 1.2) folgt $(\frac{d}{p})=-1$, also dass $\bar{d} \in (\Z/p\Z)^\times$ kein Quadrat ist. Das bedeutet aber, dass das Polynom $X^2-\bar{d} \in (\Z/p\Z)[X] $ keine Nullstelle in $\Z/p\Z$ besitzt. Es ist //////////////////////////////////////////////.Damit ist das Polynom irreduzibel. Daraus folgt aber $(\Z/p\Z)[X]/\langle X^{2}-\bar{d}\rangle$ ist ein Körper. Also trifft wegen des Isomorphismus Selbiges auf $O_K/\langle p\rangle$ zu. Das macht das von $p$ erzeugte Ideal in $O_K$ zu einem maximalen und insbesondere zu einem Primideal. Somit haben wir wieder für die linke Seite: $\frac{1}{1-(p^{2})}^{-s}=\frac{1}{1-(p)}^{-2s}$ und die rechte Seite stimmt damit überein mit $$\frac{1}{1-(p^{-s})}\cdot\frac{1}{(1-(-1)1p^{-s})}=\frac{1}{(1-p^{-s}(1+p^{-s})}=\frac{1}{1-p^{-2s}}$$.
 \\
 Fall 2: $O_K= \Z[\frac{1+\sqrt{d}}{2}]$
 Betrachte also $d\equiv 1 (\mod 4)$
 ///////////////////////////////////////////////////////
 \\
-\textbf{DEFINITION DER DRECKIGE CHARAKTER }
-\\‚
+\\
 \textbf{Theorem}
 \\
-\textit{Sei k ein imaginär quadratischer Zahlkörper. Für jede natürliche Zahl $n \in \N$ bezeichnen wir mit $r_k(n)$ die Anzahl der Paare $(x,y) \in \Z^2$, sodass $n = f(x,y)$ für eine reduzierte quadratische Form $f \in \Z[X,Y]$ mit Diskriminante $\Delta_K$ gilt. Dann ist $$r_k(b) =^{(1)} |O_K^\times|\cdot a_n =^{(2)} |O_K^\times|\cdot \sum_{d|n}\chi_K(n)$$wobei $(a_n)_{n \in \N}$ die Folge der Koeffizienten der Dirichletreihe zu $\zeta_K$ ist, und $$|O_K^\times|\cdot =\begin{cases}4, falls d = -1\\6, falls,d = -3\\2, sonst\end{cases}$$ gilt.}
+\textit{Sei K ein imaginär quadratischer Zahlkörper. Für jede natürliche Zahl $n \in \N$ bezeichnen wir mit $r_k(n)$ die Anzahl der Paare $(x,y) \in \Z^2$, sodass $n = f(x,y)$ für eine reduzierte quadratische Form $f \in \Z[X,Y]$ mit Diskriminante $\Delta_K$ gilt. Dann ist $$r_k(b) =^{(1)} |O_K^\times|\cdot a_n =^{(2)} |O_K^\times|\cdot \sum_{d|n}\chi_K(n)$$wobei $(a_n)_{n \in \N}$ die Folge der Koeffizienten der Dirichletreihe zu $\zeta_K$ ist, und $$|O_K^\times|\cdot =\begin{cases}4, falls \ d = -1\\6, falls \ d = -3\\2, sonst\end{cases}$$ gilt.}
 \\
 \\
  Beweis:
@@ -265,7 +284,7 @@ Nun bleibt $ggT(n,\Delta_K)=1$, so wie $ggT(m,\Delta_K)=1$ so folgt, nach der De
  \\
  \textbf{Motivation}
  \\
-Die Identität  $\zeta_K(s) = \zeta(s)\cdot L(s,\chi_K) $ uas vorigem Theorem liefert nun eine also eine Identität von, für $s \in \C$ mit $Re(s) > 1$ absolut konvergenten Dirichletreihen$$ \sum_{n=1}^{\infty}\frac{a_n}{n^s}= \sum_{n=1}^{\infty}(\sum_{d|n}\chi_K(d))\frac{1}{n^s}$$
+Die Identität  $\zeta_K(s) = \zeta(s)\cdot L(s,\chi_K) $ aus vorigem Theorem liefert nun eine also eine Identität von, für $s \in \C$ mit $Re(s) > 1$ absolut konvergenten Dirichletreihen$$ \sum_{n=1}^{\infty}\frac{a_n}{n^s}= \sum_{n=1}^{\infty}(\sum_{d|n}\chi_K(d))\frac{1}{n^s}$$
 wobei $a_n = \sum_{d|n}\chi_K(d)$ für beliebige $n \in \N$ aus dem nächsten Lemma folgt.
  \\
  \textbf{Lemma}
@@ -281,27 +300,26 @@ Dadurch ist $b_1,...,b_m$ für ein $m \in \N$ eindeutig durch $f$ festgelegt. Er
 \\
 Damit ist erreicht, was in der Motivation gefordert war.
 \\
-Nun schließt der Beweis zur Rechtfertigung des ersten Gleichheitszeichen des Theorems. Zuallererst ist $$\zeta_K(s) = \sum_{C \in Cl_K}\sum_{\mathfrak{J} \in C}\frac{1}{N_{K\mid \Q}(\mathfrak{J})^s}$$wobei sich die Summe $\sum_{\mathfrak{J} \in C}$ über alle Ideale $\langle 0 \rangle \subsetneq \mathfrak{J} \subseteq O_K$ aus der Idealklasse $C \in Cl_K$ erstreckt. Das erste Summenzeichen ist nach Vortrag 7 bereits endliche Summe. Die Fixierung eines beliebigen Ideals $\langle 0 \rangle \subsetneq \mathfrak{L} \subseteq O_K$ mit $\mathfrak{L}\in C^{-1}$ wobei $C^{-1}$ die inverse Idealklasse zu $C$ in $Cl_K$ bezeichnet. Die Behauptung liegt nahe, dass  $$\{Ideale \ \langle 0 \rangle \subsetneq \mathfrak{J} \subseteq O_K \ mit \ \mathfrak{J} \in \C\}\rightarrow(\mathfrak{J}\backslash\{0\})/O_K^{\times}=\{ \beta \cdot O_K^{\times} \colon \beta \in \mathfrak{L}\backslash\{ 0\}\}$$ gegeben durch $$\mathfrak{J}\mapsto \ \ Erzeuger\ des\ Haupdideals \ \ \mathfrak{J\cdot L}\cdot O_K^{\times}$$ eine wohldefinierte Bijektion darstellt. \\
+Nun schließt der Beweis zur Rechtfertigung des ersten Gleichheitszeichen des Theorems. Zuallererst ist $$\zeta_K(s) = \sum_{C \in Cl_K}\sum_{\mathfrak{J} \in C}\frac{1}{N_{K\mid \Q}(\mathfrak{J})^s}$$wobei sich die Summe $\sum_{\mathfrak{J} \in C}$ über alle Ideale $\langle 0 \rangle \subsetneq \mathfrak{J} \subseteq O_K$ aus der Idealklasse $C \in Cl_K$ erstreckt. Das erste Summenzeichen ist nach Vortrag 7 bereits endliche Summe. Die Fixierung eines beliebigen Ideals $\langle 0 \rangle \subsetneq \mathfrak{L} \subseteq O_K$ mit $\mathfrak{L}\in C^{-1}$ wobei $C^{-1}$ die inverse Idealklasse zu $C$ in $Cl_K$ bezeichnet. Die Behauptung liegt nahe, dass  $$\{Ideale \ \langle 0 \rangle \subsetneq \mathfrak{J} \subseteq O_K \ mit \ \mathfrak{J} \in \C\}\rightarrow(\mathfrak{L}\backslash\{0\})/O_K^{\times}=\{ \beta \cdot O_K^{\times} \colon \beta \in \mathfrak{L}\backslash\{ 0\}\}$$ gegeben durch $$\mathfrak{J}\mapsto \ \ Erzeuger\ des\ Haupdideals \ \ \mathfrak{J\cdot L}\cdot O_K^{\times}$$ eine wohldefinierte Bijektion darstellt. \\
 Zunächst die Wohldefiniertheit:
 \\
-Es ist $\mathfrak{J\cdot L}\subseteq O_K$ ein Hauptideal mit Namen $\langle \alpha \rangle=\mathfrak{J\cdot L}$, weil $\mathfrak{J\cdot L} \in C\cdot C^{-1} = P_K$, wobei $P_K \in Cl_K$ die Klasse aller gebrochenen Hauptideale,also das neutrale Element bezeichnet. Darüber hinaus ist $\alpha \in \langle \alpha \rangle=\mathfrak{J\cdot L}\subseteq \mathfrak{L}$. Es folgt leicht, dass genau dann $\langle \alpha \rangle=\langle \beta \rangle$ für beliebige $\beta \in \mathfrak{L}$ wenn $\alpha$ und $\beta$ assoziiert sind.Denn sei $\alpha=\beta \cdot y$ mit $y \in O_K^{\times}$ so folgt $\alpha \mid \beta$ damit unmittelbar $\beta \in \langle \alpha \rangle$ und $\langle \beta \rangle  \subseteq \langle \alpha \rangle$. Dasselbe gilt für $y:= y^{-1}$ da $y$ eine Einheit ist. Also analog für die Vertauschung von $\alpha$ und $\beta$. Die Rückrichtung nutzt, dass $O_K$ ein Hauptidealring ist.Sei weiter $\langle \alpha \rangle=\langle \beta \rangle$. Nach Wahl der Darstellungen für $\beta=\alpha\cdot c$ und $\alpha=\beta\cdot d$, so folgt $\alpha=c\cdot d \cdot \alpha$ daraus unmittelbar $1-cd=0$. Da $O_K$ auch noch Integritätsring und somit nullteilerfrei ist, folgt $\alpha=0$  ($\beta =0$) oder $1-cd=0$. Dies spricht dafüf, dass $b,c \in O_K^{\times}$ also Einheiten sind. So sind $\alpha$ und $\beta$ assoziiert.
+Es ist $\mathfrak{J\cdot L}\subseteq O_K$ ein Hauptideal mit Namen $\langle \alpha \rangle=\mathfrak{J\cdot L}$, weil $\mathfrak{J\cdot L} \in C\cdot C^{-1} = P_K$, wobei $P_K \in Cl_K$ die Klasse aller gebrochenen Hauptideale,also das neutrale Element bezeichnet. Darüber hinaus ist $\alpha \in \langle \alpha \rangle=\mathfrak{J\cdot L}\subseteq \mathfrak{L}$. Es folgt leicht, dass genau dann $\langle \alpha \rangle=\langle \beta \rangle$ für beliebige $\beta \in \mathfrak{L}$ wenn $\alpha$ und $\beta$ assoziiert sind.Denn sei $\alpha=\beta \cdot y$ mit $y \in O_K^{\times}$ so folgt $\alpha \mid \beta$ damit unmittelbar $\beta \in \langle \alpha \rangle$ und $\langle \beta \rangle  \subseteq \langle \alpha \rangle$. Dasselbe gilt für $y:= y^{-1}$ da $y$ eine Einheit ist. Also analog für die Vertauschung von $\alpha$ und $\beta$. Die Rückrichtung nutzt, dass $O_K$ ein Hauptidealring ist.Sei weiter $\langle \alpha \rangle=\langle \beta \rangle$. Nach Wahl der Darstellungen für $\beta=\alpha\cdot c$ und $\alpha=\beta\cdot d$, so folgt $\alpha=c\cdot d \cdot \alpha$ daraus unmittelbar $1-cd=0$. Da $O_K$ auch noch Integritätsring und somit nullteilerfrei ist, folgt $\alpha=0$  ($\beta =0$) oder $1-cd=0$. Dies spricht dafür, dass $b,c \in O_K^{\times}$ also Einheiten sind. So sind $\alpha$ und $\beta$ assoziiert.
 \\
-????So ist obige Abbildung wohldefiniert und injektiv. Injektivität folgt daraus, dass nur die Null auf die Null abgebildet wird.
+So ist obige Abbildung wohldefiniert und injektiv.
 \\
 Beweis der Surjektivität
-/////////////////DEFINITION GEBROCHENE IDEALE
 \\
 Sei dazu $\beta \in \mathfrak{L}\backslash{0}$ und  $\langle 0 \rangle \subsetneq \mathfrak{J} \subseteq O_K$ mit $\mathfrak{J} \in C$ beliebig und weiter $\mathfrak{J\cdot L}= \langle \alpha \rangle$ für ein $\alpha \in \mathfrak{L}$. Dann gilt $\frac{\beta}{\alpha} \cdot \mathfrak{J} \in C$ und $\frac{\beta}{\alpha} \cdot \mathfrak{J\cdot L} = \langle \beta\rangle$. Diese Darstellung ist richtig da für $\frac{\beta}{\alpha} \cdot \mathfrak{J} \subseteq K$ tatsächlich gilt $\frac{\beta}{\alpha} \cdot \mathfrak{J} \subseteq O_K$. Dies folgt daraus, dass $\beta \in \mathfrak{L}$ und damit $\langle \beta \rangle \subseteq \mathfrak{L}$. Das wiederum hat zur Folge, dass $\mathfrak{L}\mid \langle \beta \rangle$ ist. Dies bedeutet, dass ein Ideal $\mathfrak{L'}\subseteq O_K$ mit $\mathfrak{L\cdot L'}= \langle \beta \rangle$. Durch Einsetzen in $\frac{\beta}{\alpha} \cdot \mathfrak{J\cdot L} = \langle \beta\rangle$ so ist $\frac{\beta}{\alpha} \cdot \mathfrak{J\cdot L} = \mathfrak{L \cdot L'} $ und nach Multiplikation mit $\mathfrak{L^{-1}}$ folgt $\frac{\beta}{\alpha} \cdot \mathfrak{L'}\subseteq O_K$. Daraus folgt die Surjektivität.
 \\
-Wegen der Eigenschaften der Norm $N(\alpha)= N_{K\mid \Q}(\langle \alpha \rangle)=N_{K\mid \Q}(\mathfrak{J\cdot L}=N_{K\mid \Q}(\mathfrak{J}\cdot N_{K\mid \Q}(\mathfrak{L})$ ermöglicht die Bijektion umzuschreiben. Aus Vortrag 5 ist bekannt dass stets $\gamma, \delta \in \mathfrak{L}$ mit $$\mathfrak{L}= \Z\gamma+\Z\delta = \{x\gamma+y\delta\colon x,y \in \Z\}$$ gefunden werden können. Weiter ist aus Vortrag 7 gegeben, dass $$f:=\frac{N(\gamma X+\delta Y)}{N_{K\mid \Q}(\mathfrak{L})}=\frac{(\gamma X + \delta Y)\cdot \iota((\gamma)X+\iota(\delta)Y)}{N_{K\mid \Q}(\mathfrak{L})} \in \Z[X,Y]$$eine primitive, positiv definite quadratische Form mit Diskriminante $\Delta_K$ ist, die unter der Bijektion $C(\Delta_K)\rightarrow Cl_K$ auf $C^{-1}$, die Klasse von $\mathfrak{L}$ in $Cl_K$ abgebildet wird. Hieraus folgt, dass $$\sum_{\mathfrak{J}\in C}\frac{1}{N_{K\mid \Q }(\mathfrak{J})^s}=\frac{1}{|O_K^{\times}|}\sum_{(x,y)\in \Z^2\backslash \{ (0,0)\}}\frac{1}{f(x,y)^s}$$wobei sich dies durch das Ersetzen von $f$ durch eine reduzierte quadratische Form, die eigentlich äquivalent zu $f$ ist. ///////////??????????????!
+Wegen der Eigenschaften der Norm $N(\alpha)= N_{K\mid \Q}(\langle \alpha \rangle)=N_{K\mid \Q}(\mathfrak{J\cdot L}=N_{K\mid \Q}(\mathfrak{J}\cdot N_{K\mid \Q}(\mathfrak{L})$ ermöglicht die Bijektion umzuschreiben. Aus Vortrag 5 ist bekannt dass stets $\gamma, \delta \in \mathfrak{L}$ mit $$\mathfrak{L}= \Z\gamma+\Z\delta = \{x\gamma+y\delta\colon x,y \in \Z\}$$ gefunden werden können. Weiter ist aus Vortrag 7 gegeben, dass $$f:=\frac{N(\gamma X+\delta Y)}{N_{K\mid \Q}(\mathfrak{L})}=\frac{(\gamma X + \delta Y)\cdot \iota((\gamma)X+\iota(\delta)Y)}{N_{K\mid \Q}(\mathfrak{L})} \in \Z[X,Y]$$eine primitive, positiv definite quadratische Form mit Diskriminante $\Delta_K$ ist, die unter der Bijektion $C(\Delta_K)\rightarrow Cl_K$ auf $C^{-1}$, die Klasse von $\mathfrak{L}$ in $Cl_K$ abgebildet wird. Hieraus folgt, dass $$\sum_{\mathfrak{J}\in C}\frac{1}{N_{K\mid \Q }(\mathfrak{J})^s}=\frac{1}{|O_K^{\times}|}\sum_{(x,y)\in \Z^2\backslash \{ (0,0)\}}\frac{1}{f(x,y)^s}$$wobei sich dies durch das Ersetzen von $f$ durch eine reduzierte quadratische Form, die eigentlich äquivalent zu $f$, nicht ändert. Das folgt nach Bemerkung aus Cox.S.23, dass äquivalente Formen die selben Ganzzahlen repräsentieren.
 \\
 Seien also $f_1,...,f_k \in \Z[X,Y]$ reduzierte quadratische Formen, die die Äquivalenzklassen aus $C(\Delta_K)$ repräsentieren. Dann erhalten wir aufgrund absoluter Konvergenz, dass $$\zeta_K(s) = \sum_{j=1}^{k}\frac{1}{|O_K^{\times}|}\sum_{(x,y) \in \Z^2 \backslash \{(0,0)\}}\frac{1}{f_j(x,y)^s}=\frac{1}{|O_K^{\times}|}\sum_{n=1}^{\infty}\frac{r_K(n)}{n^s}$$
 Das Gleichheitszeichen folgt dann analog mit dem vorherigen Lemma.
 
  
-\begin{thebibliography}{99}
-\bibitem[J]{J} K. Jänich: \textit{Funktionentheorie: Eine Einführung.} Springer, 6. Auflage (2010)
+%\begin{thebibliography}{99}
+%\bibitem[J]{J} K. Jänich: \textit{Funktionentheorie: Eine Einführung.} Springer, 6. Auflage (2010)
 
-\end{thebibliography}
+%\end{thebibliography}
 
 \end{document}

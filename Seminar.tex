@@ -96,82 +96,90 @@ Sei $(a_{\nu})\subset \C$. Das Unendliche Produkt $\prod_{\nu = 1 }^{\infty}(a_{
 \cdot \prod_{\nu = 1}^{\nu_{0} - 1}a_{\nu}$.
 \\
 \\
-\textbf{Satz}: 
+\textbf{Satz 1. 2 (Konvergenz von unendlichen Produkten)}
 \\
-(Konvergenz von unendlichen Produkten)
-\\
+
 Das Unendliche Produkt $\prod_{\nu = 1 }^{\infty}(a_{\nu})$ existiere. Dann gilt:
 \\
 \\
-(1)$\prod_{\nu = 1}^{\infty}a_{\nu} = 0$ genau dann, wenn mindestens ein $a_{\nu}$ gleich Null ist.
+(1) $\prod_{\nu = 1}^{\infty}a_{\nu} = 0$ genau dann, wenn mindestens ein $a_{\nu}$ gleich Null ist.
 \\
 \\
-(2)Die Folge $(a_{\nu})$ ist "1-Folge", das heißt es ist $\lim_{\nu \rightarrow\infty}a_{\nu} = 1$
+(2) Die Folge $(a_{\nu})$ ist "1-Folge", das heißt es ist $\lim_{\nu \rightarrow\infty}a_{\nu} = 1$
 \\
 \\
 \textbf{Konstruktion des Logarithmus im Komplexen}
 \\
-Durch die Einschränkung der Exponentialfunktion auf den Streifen $S = \{ w \in \C | \Im{w}(-\pi, \pi)\}$ wird sie injektiv und der Satz der Umkehrfunktion ist anwendbar.Daraus folgt:$$\Log(z) := \log(r) + \phi$$Hierbei bezeichnet log den reellen und Log den komplexen Logarithmus.
+
+Durch die Einschränkung der Exponentialfunktion auf den Streifen $S = \{ z \in \C | Im(z) \in (-\pi, \pi)\}$ wird sie injektiv und der Satz der Umkehrfunktion ist anwendbar. Daraus folgt:$$\Log(z) := \log(r) + \phi$$ mit $r=|z|$ mit $arg(z)= \phi$. Hierbei bezeichnet log den reellen und Log den komplexen Logarithmus .
 \\
 \\
 \textbf{Cauchy-Riemann-Differentialgleichug in Polarkoordinaten (CRDFG)}
 \\
-Durch die Darstellung einer Komplexen Zahl als $z = r\cdot e^{i\phi}$ folgt eine besondere Form der CRDFG. Es ist: $$(1) \frac{\delta u}{\delta r} = \frac{1}{r} \frac{\delta v}{\delta \phi}$$ und $$(2)\frac{\delta v}{\delta r} = -\frac{1}{r} \frac{\delta u}{\delta \phi}$$ mit $f = u + iv$.
+
+Durch die Darstellung einer komplexen Zahl als $z = r\cdot e^{i\phi}$ folgt eine besondere Form der CRDFG. Es ist: $$(1) \frac{\delta u}{\delta r} = \frac{1}{r} \frac{\delta v}{\delta \phi}$$ und $$(2)\frac{\delta v}{\delta r} = -\frac{1}{r} \frac{\delta u}{\delta \phi}$$ mit $f := u + iv$.
 \\
 \\
-\textbf{Bemerkung:}Log ist holomorph
+\textbf{Bemerkung:} Log ist holomorph
 \\
+
 Mit obiger Gleichung folgt mit $Log(r\cdot e^{i \phi}) := log(r) + i \phi$, dass $$\frac{\delta u}{\delta r} =\frac{1}{r} = \frac{1}{r} \frac{\delta v}{\delta \phi} $$ und $$\frac{\delta v}{\delta r} = 0=-\frac{1}{r} \frac{\delta u}{\delta \phi}$$ mit $f = log(r) + i\phi= u +iv$.
 \\
 \\
 \textbf{Potenzreihe des Logarithmus auf $\C\setminus\{0\}$ }
+\\
+
 Mit $$Log(z) := log|z|+ i \cdot arg(z)$$ folgt: $$Log(z) = \sum_{n = 1}{\infty}\frac{(-1)^{(n-1)}}{n}(z-1)^{n}$$ als Potenzreihe mit Konvergenzradius 1 für alle $z \in \C$ und $z \neq 0$.
 \\
 \\
-\textbf{Definition (Normale Konvergenz)}
+\textbf{Definition 1.6 (Normale Konvergenz)}
 \\
+
 Eine Reihe von Funktionen $f_{1}+f_{2}+f_{3}+....$ $f_{n}: D\rightarrow \C $ für $D \subset \C$ und $n \in \N_{0}$ heißt \textit{normal konvergent in D}, falls es zu jedem Punkt $a \in D$ eine Umgebung U und eine Folge $(M_{n})_{n\geq0}$ nicht negativer reeller Zahlen gibt, so dass gilt $$|f_{n}(z)|\leq M_{n}$$ für alle $z \in U \cap D$, für alle $n \in \N_{0}$ und $\sum_{n = 0}^{\infty}M_{n}$ konvergent.
 \\
 \\
 \textbf{Identitätssatz}
 \\
-Seien $f$ und $g$ holomorphe Funktionen auf einer Umgebung U von $z_{0}$ und sei $z_{0}$ ein Häufungspunkt der Koinzidenzmenge  $\{ z \in U  |  f(z) = g(z) \}$, dann existiert eine Umgebung V von $z_{0}$mit $f$(z) = $g$(z) auf ganz V.
+
+Seien $f$ und $g$ holomorphe Funktionen auf einer Umgebung U von $z_{0}$ und sei $z_{0}$ ein Häufungspunkt der Koinzidenzmenge  $\{ z \in U  |  f(z) = g(z) \}$, dann existiert eine Umgebung V von $z_{0}$ mit $f$(z) = $g$(z) auf ganz V.
 \\
 \\
-\textbf{Hilfslemma (1)} 
+\textbf{Lemma}
+\\
+
+Sei $\sum_{n =1}^\infty f_{\textit{n}}$ eine normal konvergente Reihe von holomorphen Funktionen $f_{\textit{n}}: \textit{D}\rightarrow\C $ auf einem Gebiet
+$D\subseteq\C$. Dann existieren für jeden Punkt $ z \in \C$ eine offene Umgebung $z \in U \subseteq \C$ so wie eine natürliche Zahl $N \in \N$, sodass $|f_{\textit{n}}(z) \leq \frac{1}{2}$ für alle $z \in U $ und alle $n \geq N $ gilt. In diesem Fall ist durch $$F_{N}(z) := \sum_{n = N}^\infty \Log( 1 + f_{n}(z))$$ eine holomorphe Funktion $F_{N} : U \rightarrow \C$ definiert. Weiter gilt $$\lim_{m\rightarrow\infty}\prod_{n=1}^m ( 1 + f_{n}(z)) = \prod_{n=1}^{N-1} ( 1 + f_{n}(z))\cdot e^{F_{N}(z)}$$ für alle $z \in U$. Insbesondere stellt das unendliche Produkt$$\prod_{n=1}^\infty ( 1 + f_{n}(z)) := \lim_{m\rightarrow\infty}\prod_{n=1}^m ( 1 + f_{n}(z))$$ eine holomorphe Funktion auf D dar.
+\\
+\\
+\textit{Beweis}:
+\\
+\\
+\textbf{Hilfslemma (1)}
+\\
+Aus $|f_n(z)|\leq \frac{1}{2}$ folgt $f_n(z) \in \C\backslash\R_{\leq 0}$. Ist $|f_n(z)|\leq \frac{1}{2}$ so folgt $f_n(z)\leq +\frac{1}{2}$ oder $f_n(z)\leq -\frac{1}{2}$. Im ersten Fall und zweiten Fall folgt mit der Addition von 1, der Wurzeldarstellung und deren Multiplikativität des komplexen Betrag und dessen positiven Definitheit, dass wir uns nie im reell negativen Zahlbereich befinden. Wäre $f_n(z)=0$ ist das wiederum aufgrund der Definitheit des Betrags $|f_n(z)|=0$ und $f_n(z)+1$ durch die Addition mit 1 wieder positiv und reell.
+
+Es ist $\Log( 1 + f_{n}(z))$ für alle $z \in U $ und $n \geq N$definiert, da aus der obiger Betrachtung hervorgeht, dass $1+f_n(z)$ auf der Einschränkung, auf der Log definiert ist, operiert.
+\\
+\textbf{Hilfslemma (2)} 
 \\
 Abschätzung $ |Log(1+z)|\leq 2|z|$ für alle $z \in \C mit |z| \leq \frac{1}{2}$
 \\
 \\
 \textit{Beweis}:
 $$|\Log(1+z)|= |\sum_{n = 1}^\infty (-1)^{(n-1)}\frac{z^{n}}{n}|\leq|z|\sum_{n = 0}^\infty\frac{|z|^{n}}{n + 1} < |z|\cdot (\frac{1}{1}+\frac{1}{2\cdot 2}+\frac{1}{3 \cdot2^2}+...+\frac{1}{(n+1)\cdot2^(n)}) = 2\cdot|z| $$wobei bei dem letzten Gleichheitszeichen der Wert der geometrischen Reihe benutzt wurde. Nämlich $$\sum_{n=0}^{\infty}\frac{1}{(n+1)\cdot2^{(n)}} < \sum_{n=0}^{\infty}\frac{1}{2^{(n)}} = \sum_{n=0}^{\infty}(\frac{1}{2})^n = \frac{1}{1-(\frac{1}{2})} = 2 $$
-\\ 
-
-
-\textbf{Lemma}
-\\
-\textit{Sei} $\sum_{n =1}^\infty f_{\textit{n}}$ \textit{eine normal konvergente Reihe von holomorphen Funktionen} $f_{\textit{n}}: \textit{D}\rightarrow\C $ \textit{auf einem Gebiet}
-$D\subseteq\C$.\textit{Dann existieren für jeden Punkt $ z \in \C$ eine offene Umgebung $z \in U \subseteq \C$ so wie eine natürliche Zahl $N \in \N$, sodass $|f_{\textit{n}}(z) \leq \frac{1}{2}$ für alle $z \in U $ und alle $n \geq N $ gilt. In diesem Fall ist durch $$F_{N}(z) := \sum_{n = N}^\infty \Log( 1 + f_{n}(z))$$ eine holomorphe Funktion $F_{N} : U \rightarrow \C$ definiert, Weiter gilt $$\lim_{m\rightarrow\infty}\prod_{n=1}^m ( 1 + f_{n}(z)) = \prod_{n=1}^{N-1} ( 1 + f_{n}(z))\cdot e^{F_{N}(z)}$$ für alle $z \in U$. Insbesondere stellt das unendliche Produkt$$\prod_{n=1}^\infty ( 1 + f_{n}(z)) := \lim_{m\rightarrow\infty}\prod_{n=1}^m ( 1 + f_{n}(z))$$ eine holomorphe Funktion auf D dar.}
-\\
-\\
-\textit{Beweis}
-\\
-\textbf{Hilfslemma}
-\\
-Aus $|f_n(z)|\leq \frac{1}{2}$ folgt $f_n(z) \in \C\backslash\R_{\leq 0}$.Ist $|f_n(z)|\leq \frac{1}{2}$ so folgt. $f_n(z)\leq +\frac{1}{2}$ oder $f_n(z)\leq -\frac{1}{2}$. Im ersten Fall und zweiten Fall folgt mit der Addition von 1, der Wurzeldarstellung und deren Multiplikativität des komplexen Betrag und dessen positiven Definitheit, dass wir uns nie im reell negativen Zahlbereich befinden. Wäre $f_n(z)=0$ ist das wiederum aufgrund der Definitheit des Betrags $|f_n(z)|=0$und $f_n(z)+1$ durch die Addition mit 1 wieder positiv und reell.
-
-Es ist $\Log( 1 + f_{n}(z))$ für alle $z \in U $ und $n \geq N$definiert, da aus der obiger Betrachtung hervorgeht, dass $1+f_n(z)$ auf der Einschränkung auf der Log definiert ist, operiert.
 \\
 \\
 \\
- $(1 + f_{n}(z)) \in \C \setminus \R_{\leq 0 }$ gilt. Zeige weiter $F_{N}(z) := \sum_{n = N}^\infty \Log( 1 + f_{n}(z))$ ist normal konvergent auf U. Dies folgt daraus, dass $| Log( 1 + z) | \leq 2|z| $ für $z \in \C mit |z| \leq \frac{1}{2}$ nach Hilfslemma (1) und der Tatsache das mit der Abschätzung von $|Log(1+z)| \leq 2|z|$ mit $|f_n(z)|\leq \frac{1}{2}$ genau der Definition der Normalen Konvergenz entspricht.
-Insbesondere stellen $F_{N}$ und $e^{F_{N}}$ holomorphe Funktionen dar, da Holomorphie unter Bildung von Summen, Produkten und Verkettungen erhalten bleibt. Für beliebige $z \in \C $ und $m\leq N$ gilt, dass $$\prod_{n = 1 }^{m}( 1 + f_{n}(z)) = \prod_{n = 1}^{N - 1}( 1 + f_{n}(z))\cdot\prod_{n = N}^{m}( 1 + f_{n}(z))= \prod_{n = 1}^{N - 1}( 1 + f_{n}(z))\cdot\prod_{n = N}^{m}(e^{Log( 1 + f_{n}(z)}) $$ $$= \prod_{n = 1}^{N - 1}( 1 + f_{n}(z))\cdot\prod_{n = N}^{m}(e^{\sum_{n = N}^{m}Log( 1 + f_{n}(z)})$$wobei hier benutzt wurde, dass $e^{F_{n}}$ auf der bereits oben angesprochenen Einschränkung, konform mit dem komplexen Logarithmus agiert. Mit der Stetigkeit der Exponentialfunktion folgt,$$\lim_{m\rightarrow\infty}\prod_{n=1}^m ( 1 + f_{n}(z)) =\prod_{n = 1}{N - 1}(1 + f_{n}(z))\cdot e^{F_{N}(z)}$$ für alle $z \in U$ gilt. Durch die Holomorphie von $(1+ f_{n})$ für $1 \leq n \leq N - 1$ und $e^{F_{n}}$ und dem Umstand, dass endliche Produkte holomorpher Funktionen wiederum holomorph sind, stellt $$\prod_{n =1}^{\infty}(1 +f_n (z))$$ als unendliches Produkt eine holomorphe Funktion -nicht nur für alle $z_0$ auf U- sondern aufgrund der Offenheit der Umgebung U auf ganz D, dar.
+ Aus (1) folgt $(1 + f_{n}(z)) \in \C \setminus \R_{\leq 0 }$. Zeige weiter $F_{N}(z) := \sum_{n = N}^\infty \Log( 1 + f_{n}(z))$ ist normal konvergent auf U. Dies folgt daraus, dass $| Log( 1 + z) | \leq 2|z| $ für $z \in \C$ mit $|z| \leq \frac{1}{2}$ nach Hilfslemma (2) und der Tatsache, dass mit der Abschätzung von $|Log(1+z)| \leq 2|z|$ mit $|f_n(z)|\leq \frac{1}{2}$ $F_{N}(z)$ genau der Definition der normalen Konvergenz entspricht.
+Insbesondere stellen $F_{N}$ und $e^{F_{N}}$ holomorphe Funktionen dar, da Holomorphie unter Bildung von Summen, Produkten und Verkettungen erhalten bleibt. Für beliebige $z \in \C $ und $m\leq N$ gilt, dass $$\prod_{n = 1 }^{m}( 1 + f_{n}(z)) = \prod_{n = 1}^{N - 1}( 1 + f_{n}(z))\cdot\prod_{n = N}^{m}( 1 + f_{n}(z))= \prod_{n = 1}^{N - 1}( 1 + f_{n}(z))\cdot\prod_{n = N}^{m}(e^{Log( 1 + f_{n}(z)}) $$ $$= \prod_{n = 1}^{N - 1}( 1 + f_{n}(z))\cdot\prod_{n = N}^{m}(e^{\sum_{n = N}^{m}Log( 1 + f_{n}(z)})$$wobei hier benutzt wurde, dass $e^{F_{n}}$ auf der bereits oben angesprochenen Einschränkung konform mit dem komplexen Logarithmus agiert. Mit der Stetigkeit der Exponentialfunktion folgt $$\lim_{m\rightarrow\infty}\prod_{n=1}^m ( 1 + f_{n}(z)) =\prod_{n = 1}{N - 1}(1 + f_{n}(z))\cdot e^{F_{N}(z)}$$ für alle $z \in U$ gilt. Durch die Holomorphie von $(1+ f_{n})$ für $1 \leq n \leq N - 1$ und $e^{F_{n}}$ und dem Umstand, dass endliche Produkte holomorpher Funktionen wiederum holomorph sind, stellt $$\prod_{n =1}^{\infty}(1 +f_n (z))$$ als unendliches Produkt eine holomorphe Funktion - nicht nur für alle $z_0$ auf U, sondern aufgrund der Offenheit der Umgebung U auf ganz D - dar.
+\\
 \\
 \\
 \\
 \textbf{Proposition}
 \\
-Sei $\textit{K}$ ein Zahlkörper. Dann konvergiert das unendliche Produkt $$\zeta_{\textit{K} \textit{(s)}}= \prod_{\mathfrak{p}}\frac{1}{1- N_{\textit{K}\mid\Q}(\mathfrak{p})^\textit{(-s)}}$$ für $s \in \C mit RE(s) > 1$. Des weiteren stellt $\zeta_{K}(s)\colon \{ s \in \C \colon Re(s)>1\} \rightarrow \C$ eine holomorphe Funktion dar.
+
+Sei $\textit{K}$ ein Zahlkörper. Dann konvergiert das unendliche Produkt $$\zeta_{\textit{K} \textit{(s)}}= \prod_{\mathfrak{p}}\frac{1}{1- N_{\textit{K}\mid\Q}(\mathfrak{p})^\textit{(-s)}}$$ für $s \in \C $ mit $ Re(s) > 1$. Des weiteren stellt $\zeta_{K}(s)\colon \{ s \in \C \colon Re(s)>1\} \rightarrow \C$ eine holomorphe Funktion dar.
 \\
 \\
 \textit{Beweis}:
@@ -179,35 +187,35 @@ Sei $\textit{K}$ ein Zahlkörper. Dann konvergiert das unendliche Produkt $$\zet
 \\
 Der Ausdruck
 $$\zeta*_{\textit{K} \textit{(s)}}= \prod_{\mathfrak{p}}1- N_{\textit{K}\mid\Q}(\mathfrak{p})^\textit{(-s)}$$ für $s \in \C$ mit $Re(s) > 1$ konvergiert, beziehungsweise ist auf diesem Gebiet holomorph.
-Zunächst ist es wichtig zu sehen, dass keiner der Faktoren $ 1- N_{K|\Q}(\mathfrak{p})^{(-s)}$eine Nullstelle in der Menge $s \in \C$ mit Re(s) > 1besitzt.
+Zunächst ist es wichtig zu sehen, dass keiner der Faktoren $ 1- N_{K|\Q}(\mathfrak{p})^{(-s)}$ eine Nullstelle in der Menge $s \in \C$ mit Re(s) > 1 besitzt.
 \\
 Dies folgt schnell über: 
 \\
-Angenommen $1- N_{K|\Q}(\mathfrak{p})^{(-s)}$ hat eine Nullstelle in der Menge  $s \in \C $ mit Re(s) > 1 so folgt $1 = N_{K|\Q}(\mathfrak{p})^{(-s)}$. Das bedeutet nach der Norm |$O_K /\mathfrak{p}| = 1$ das heißt $\mathfrak{p} = O_K$. Dann ist aber $\mathfrak{p}$ nicht echt in $O_K$ und daher kein Primideal. Widerspruch.
+Angenommen $1- N_{K|\Q}(\mathfrak{p})^{(-s)}$ hat eine Nullstelle in der Menge  $s \in \C $ mit Re(s) > 1, so folgt $1 = N_{K|\Q}(\mathfrak{p})^{(-s)}$. Das bedeutet nach der Norm |$O_K /\mathfrak{p}| = 1$, d. h. $\mathfrak{p} = O_K$. Dann ist aber $\mathfrak{p}$ nicht echt in $O_K$ und daher kein Primideal. \\
 \\
 Trifft die Behauptung auf $\zeta*_{K}$ zu, so gilt zusätzlich $\zeta*_{K} \neq 0$ für alle  $s \in \C$ mit Re(s) > 1. Denn wäre  $\zeta*_{K} = 0$, so wäre nach oben stehenden Satz mindestens ein Faktor gleich Null. Dies haben wir aber eben ausgeschlossen. So ist auch  $\zeta*_{K}^{-1}$ holomorph auf diesem Gebiet. Es genügt nun zu zeigen, dass 
-$\zeta*_{K}^{-1}$ = $\zeta_{K}$. Es ist: $$\zeta*_{K}^{-1}=(\prod_{\mathfrak{p}}(1 - N_{N\mid\Q}(\mathfrak{p})^{(-s)}))^{-1} =\prod_{\mathfrak{p}}(1 - N_{N\mid\Q}(\mathfrak{p})^{(-s)})^{-1} = \prod_{\mathfrak{p}}\frac{1}{1 - N_{N\mid\Q}(\mathfrak{p})^{(-s)}}=\zeta_{K}$$
+$\zeta*_{K}^{-1}$ = $\zeta_{K}$. Es ist: $$\zeta*_{K}^{-1}=(\prod_{\mathfrak{p}}(1 - N_{N\mid\Q}(\mathfrak{p})^{(-s)}))^{-1} $$ $$=\prod_{\mathfrak{p}}(1 - N_{N\mid\Q}(\mathfrak{p})^{(-s)})^{-1} = \prod_{\mathfrak{p}}\frac{1}{1 - N_{N\mid\Q}(\mathfrak{p})^{(-s)}}=\zeta_{K}$$
 Damit folgt $\zeta_{K}$ ist holomorph auf $\{ s \in \C \colon Re(s) > 1\}$. Der Nachweis der normalen Konvergenz der Funktionenreihe $$\sum_{\mathfrak{p}}N_{N\mid\Q}(\mathfrak{p})^{-s}$$ auf $\{ s \in \C \colon Re(s) > 1\}$ folgt aus:$$\sum_{\mathfrak{p}}|e^{Log(N_{K\mid \Q}(\mathfrak{p})^{(-s)}}| = \sum_{\mathfrak{p}}|e^{-s\cdot Log(N_{K\mid \Q}(\mathfrak{p})}|$$
  und unter der Verwendung von: 
- Es ist mit $z = x + iy$ $$|e^z| = e^x $$ da $$|e^z|=|e^{x+iy}|=|e^{x}\cdot e^{iy}|= |e^{x}|\cdot |e^{iy}| = e^{x}\cdot |e^{iy}| = e^x \cdot |cos(y)+isin(y)| = e^x\cdot\sqrt{cos^2(x)+sin^2(x)}  =e^x\cdot 1$$
- 
-und mithilfe der Betrachtung: Jedes Primideal $\langle0\rangle\subsetneq \mathfrak{p} \subseteq O_{\textit{K}}$ in $\mathfrak{p} \in O_K$ enthält eine Primzahl $p$ und $\mathfrak{p}$ tritt in diesem Fall in der Primidealzerlegung ( Siehe Vortrag 5) des Hauptideals $\langle p \rangle=p\cdot O_K$ auf. Weiter gibt es zu jeder Primzahl $p$ nur endlich viele Primideale $\mathfrak{p}\subset O_K$ die $p$ enthalten.Präziser gilt: Für fast alle Primzahlen $p$ gibt es höchstens $[K\colon \Q]$ verschiedene Primideale $\mathfrak{p}\subset O_K$, die $p$ enthalten. 
+ Es ist mit $z = x + iy$ $$|e^z| = e^x $$ da $$|e^z|=|e^{x+iy}|=|e^{x}\cdot e^{iy}|= |e^{x}|\cdot |e^{iy}| = e^{x}\cdot |e^{iy}| = e^x \cdot |cos(y)+isin(y)| $$ $$= e^x\cdot\sqrt{cos^2(x)+sin^2(x)} =e^x\cdot 1$$
+und mithilfe der Betrachtung: Jedes Primideal $\langle0\rangle\subsetneq \mathfrak{p} \subseteq O_{\textit{K}}$ in $\mathfrak{p} \in O_K$ enthält eine Primzahl $p$ und $\mathfrak{p}$ tritt in diesem Fall in der Primidealzerlegung (Siehe Vortrag 5) des Hauptideals $\langle p \rangle=p\cdot O_K$ auf. Weiter gibt es zu jeder Primzahl $p$ nur endlich viele Primideale $\mathfrak{p}\subset O_K$ die $p$ enthalten.Präziser gilt: Für fast alle Primzahlen $p$ gibt es höchstens $[K\colon \Q]$ verschiedene Primideale $\mathfrak{p}\subset O_K$, die $p$ enthalten. 
 \\
 ////////// warum gilt die norm von p ist dasselbe wie die kardinalität von ok modulo P größer gleich p
 //////////
 \\
 So folgt:
 
-$$\sum_{\mathfrak{p},p\in \mathfrak{p},p>C}(N_{K\mid \Q}(\mathfrak{p}))^{-Re(s)} \leq [K\colon\Q]\cdot \sum_{p>C}p^{-Re(s)} $$ Den letzten Ausdruck kann man mithilfe der Geometrischen Reihe abschätzen.
+$$\sum_{\mathfrak{p},p\in \mathfrak{p},p>C}(N_{K\mid \Q}(\mathfrak{p}))^{-Re(s)} \leq [K\colon\Q]\cdot \sum_{p>C}p^{-Re(s)} $$Den letzten Ausdruck kann man mithilfe der Geometrischen Reihe abschätzen.
 \\
 \\
 \textbf{Definition Dirichletreihe}
 \\
-\textit{Eine (formale) Dirichletreihe ist eine Reihe der Form $$\mathbb{D}(s) = \sum_{n =1}^{\infty}\frac{a_n}{n^s} $$}, wobei $a_n$ eine beliebige Folge komplexer Zahlen beschreibt.
+\textit{Eine (formale) Dirichletreihe ist eine Reihe der Form $$\mathbb{D}(s) = \sum_{n =1}^{\infty}\frac{a_n}{n^s} $$}wobei $a_n$ eine beliebige Folge komplexer Zahlen beschreibt.
 \\
 \\
 \textbf{Proposition}
 \\
+
 \textit{Sei $\textit{K}$ ein Zahlkörper. Dann gilt für alle $s \in \C$ mit $Re(s)>1$, dass$$\zeta_{K}(s) = \sum_{\mathfrak{J}}\frac{1}{(N_{K\mid\Q}(\mathfrak{J}))^s}=\sum_{n=1}^{\infty}\frac{a_n}{n^s}$$
 wobei sich die Summation in $\sum_{\mathfrak{J}}$ über alle Ideale $\langle0\rangle\subsetneq \mathfrak{p} \subseteq O_{\textit{K}}$ erstreckt, und $a_n$ für $n \in \N$ die Anzahl der Ideale $\mathfrak{J} \subseteq O_K$ mit $N_{K\mid \Q}(\mathfrak{J}) = n$ bezeichnet. Insbesondere gilt: $$\zeta_{K(s)}= \sum_{n=1}^{\infty}\frac{1}{n^s}$$}
 \\
@@ -219,16 +227,22 @@ Zur Vereinfachung, führt man eine beliebige Nummerierung auf der Menge aller Pr
 ?????Angenommen es gibt eine nichtleere Menge $M$ von Idealen für die nicht gilt, dass die Menge der Primideale in einem $O_K$, welcher noetherscher Integritätsring ist, abzählbar ist. Da $O_K$ noethersch, folgt es existiert ein maximales Ideal $a$ in $M$. Dieses kann kein Primideal sein, das heißt es gibt Elemente $b_1,b_2$ in $O_K$ mit $b_1b_2 \in a$ aber $b_1,b_2 \notin a$. Setzte $a_1=(b_1)+a$, $a_2=(b_2)+a$, so ist a $\subsetneq a_1$ und $a \subsetneq a_2$ und $a_1a_2 \subsetneq a$. Aus Maximalitätsgründen enthalten $a_1$ und $a_2$ Produkte von Primidealen, deren Produkte wiederum in $a$ liegen.Widerspruch.????
 \\
 Sei weiter $s \in \C$ mit $Re(s) > 1$ beliebig, dann ist mit $N_{K\mid \Q}\leq 2$ für jedes $m \in \N$, analog dem \textit{Beweis} (siehe oben). So folgt:$$\prod_{m=1}^{n}\frac{1}{1-N_{K\mid \Q}(\mathfrak{p}_m)^{(-s)}} =\prod_{m=1}^{n}\sum_{k=0}^{\infty}(N_{K\mid \Q}(\mathfrak{p}_m))^{-k\cdot(s)}=\prod_{m=1}^{n}\sum_{k=0}^{\infty}(N_{K\mid \Q}(\mathfrak{p}_m^k))^{(-s)}$$
-Daraus resultiert mit Anwendung der Geometrischen Reihe auf$(N_{K\mid \Q}(\mathfrak{p}_m^k))^{(-s)} < 1$, dass das Produkt absolut konvergiert, da es Produkt absolut konvergenter Reihen ist. Mithilfe des Umordnungssatzes für absolut konvergente Reihen und der Mulitplikativität der Norm spricht dann:
+Daraus resultiert mit Anwendung der Geometrischen Reihe auf \\
+$(N_{K\mid \Q}(\mathfrak{p}_m^k))^{(-s)} < 1$, dass das Produkt absolut konvergiert, da es Produkt absolut konvergenter Reihen ist. Mithilfe des Umordnungssatzes für absolut konvergente Reihen und der Mulitplikativität der Norm spricht dann:
 $$\prod_{m=1}^{n}\sum_{k=0}^{\infty}(N_{K\mid \Q}(\mathfrak{p}_m^k))^{(-s)}=1+\sum_{j=1}^{n}\sum N_{K\mid \Q}(\mathfrak{p}_{m_1}^{\alpha_1})^{(-s)}\cdot\cdot\cdot(N_{K\mid \Q}\mathfrak{p}_{m_j}^{\alpha_j})^{(-s)}$$ $$=1+\sum_{j=1}^{n}\sum N_{K\mid \Q}(\mathfrak{p}_{m_1}^{\alpha_1}\cdot\cdot\cdot\mathfrak{p}_{m_j}^{\alpha_j})^{(-s)}$$
 wobei sich die unbeschriftete Summe über alle Teilmengen $\{m_{1},...,m_{j}\}\subseteq \{ 1,...,n\}$ und alle $(\alpha_1,...,\alpha_j)$ erstreckt. Mit $n \rightarrow \infty$ folgt mit der vorherigen Proposition, dass $$1+\sum_{j=1}^{\infty}\sum N_{K\mid \Q}(\mathfrak{p}_{m_1}^{\alpha_1}\cdot\cdot\cdot\mathfrak{p}_{m_j}^{\alpha_j})^{(-s)}$$
 Aufgrund der eindeutigen Primidealzerlegung in $O_K$ und dass $\N_K(O_K)^{-s}=1$ tritt jedes Ideal $\langle0\rangle\subsetneq \mathfrak{p} \subseteq O_{\textit{K}}$ genau einmal als $\mathfrak{p}_{m_1}^{\alpha_1}\cdot\cdot\cdot\mathfrak{p}_{m_j}^{\alpha_j}$ genau einmal auf. Wieder aufgrund der Umordnung, folgt daraus $$\zeta_{K}(s) = \sum_{\mathfrak{J}}\frac{1}{(N_{K\mid\Q}(\mathfrak{J}))^s}=\sum_{n=1}^{\infty}\frac{a_n}{n^s}$$ und im Falle $\textit{K}$ = $\Q$ gibt es für jede natürliche Zahl genau ein Ideal mit Norm n, nämlich $\langle n\rangle=n\Z\subseteq \Z$, daher gilt $a_n=1$ für alle $n\in \N$. So folgt insbesondere: $$\zeta_{K(s)}= \sum_{n=1}^{\infty}\frac{1}{n^s}$$
-\textbf{Definition }
+\textbf{Definition 1.7 }
+\\
+
 Aus Vortrag 8 existierender Gruppenhomomorphismus als Funktion aufgefasst $\chi_k \colon \N \rightarrow \{-1,0,1 \}$, wobei man für $n \in \N$ schreibt, dass $$\chi_K=\begin{cases}0 \ falls \ ggT(n,\Delta_K) >1,\\\chi_{K}(\bar{n})\ falls\ ggT(n,\Delta_K) =1\end{cases}$$
+\\
+\\
 \\
 \\
 \textbf{Theorem}
 \\
+
 \textit{Sei $K=\Q(\sqrt{d})$ ein quadratischer Zahlkörper. Dann definiert das Euler Produkt $$L(s,\chi_K) := \prod_{p}\frac{1}{1-\chi_K(p)p^{(-s)}} $$ eine holomorphe Funktion $L(s,\chi_K) \colon \{s \in \C \colon Re(s) > 1\} \rightarrow \C$, und es gilt $$\zeta_K(s) = \zeta(s)\cdot L(s,\chi_K) $$ für alle }$s \in \C$ mit Re(s) > 1. Man nennt $L(\cdot,\chi_k)$ die \textit{L-Funktion zum Gruppenhomomorphismus $\chi_K$}.
 \\
 \\
@@ -285,6 +299,9 @@ Nun bleibt $ggT(n,\Delta_K)=1$, so wie $ggT(m,\Delta_K)=1$ so folgt, nach der De
  So konvergiert auch das Produkt aus beiden, mit dem Namen $$\zeta_(s) \cdot L(s,\chi_K) = \sum_{m=1}^{\infty} \sum_{d=1}^{\infty}\frac{\chi_K(d)}{(md)^s}$$ absolut.
  Dadurch ist die Umordnung der Summation beliebig veränderbar zu $$\zeta_(s) \cdot L(s,\chi_K)=\sum_{m=1}^{\infty} \sum_{d=1}^{\infty}\frac{\chi_K(d)}{(md)^s}= \sum_{n=1}^{\infty}(\sum_{d|n}\chi_K(d))\frac{1}{n^s}$$ im letzten Schritt nutzt es, dass $n \cdot m = n$ wiederum in $\N$ durch ein beliebiges $n \in \N$ dargestellt werden kann.
  \\
+ \\
+ \\
+ \\
  \textbf{Motivation}
  \\
 Die Identität  $\zeta_K(s) = \zeta(s)\cdot L(s,\chi_K) $ aus vorigem Theorem liefert nun eine also eine Identität von, für $s \in \C$ mit $Re(s) > 1$ absolut konvergenten Dirichletreihen$$ \sum_{n=1}^{\infty}\frac{a_n}{n^s}= \sum_{n=1}^{\infty}(\sum_{d|n}\chi_K(d))\frac{1}{n^s}$$
@@ -292,6 +309,7 @@ wobei $a_n = \sum_{d|n}\chi_K(d)$ für beliebige $n \in \N$ aus dem nächsten Le
  \\
  \textbf{Lemma}
  \\
+ 
  \textit{Sei $N \in \N_0$ und $f \colon \{s \in \C \colon Re(s)>N\}\rightarrow \C$ eine holomorphe Funktion, falls für alle $s \in \C$ mit $Re(s) >N$ durch eine absolut konvergente Dirchletreihe $$f(s) = \sum_{n=1}^{\infty}\frac{b_n}{n^s}$$gegeben ist, dann ist die Koeffizientenfolge $(b_n)_{n \in \N}$ eindeutig durch $f$ festgelegt. Dies ist äquivalent zur Einzigartigkeit der Darstellung von $f$ als absolut konvergente Dirichletreihe, sofern die Darstellung überhaupt existiert.}
  \\
  \textit{Beweis}:

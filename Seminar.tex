@@ -177,10 +177,13 @@ $D\subseteq\C$. Dann existieren für jeden Punkt $ z \in \C$ eine offene Umgebun
 Aus $|f_n(z)|\leq \frac{1}{2}$ folgt $f_n(z) \in \C\backslash\R_{\leq 0}$. 
 
 \begin{proof}
-??
-Ist $|f_n(z)|\leq \frac{1}{2}$ so folgt $f_n(z)\leq +\frac{1}{2}$ oder $f_n(z)\leq -\frac{1}{2}$. Im ersten Fall und zweiten Fall folgt mit der Addition von 1, der Wurzeldarstellung und deren Multiplikativität des komplexen Betrag und dessen positiven Definitheit, dass wir uns nie im reell negativen Zahlbereich befinden. Wäre $f_n(z)=0$ ist das wiederum aufgrund der Definitheit des Betrags $|f_n(z)|=0$ und $f_n(z)+1$ durch die Addition mit 1 wieder positiv und reell.
-
-Es ist $\Log( 1 + f_{n}(z))$ für alle $z \in U $ und $n \geq N$definiert, da aus der obiger Betrachtung hervorgeht, dass $1+f_n(z)$ auf der Einschränkung, auf der Log definiert ist, operiert.
+Es ist $|f_n(z)|\leq 0$, daher ist die Anwendung der Wurzelfunktion und das Quadrieren eine Äquivalenzumformung. So folgt mit der Definition des komplexen Betrags direkt:
+$$|(f_n(z))|^2=\sqrt{f_n(z)\cdot {\iota (f_n(z))}}^2=\sqrt{f_n(z)}^2\cdot\sqrt{{\iota (f_n(z))}}^2= f_n(z)\cdot{\iota (f_n(z))}$$und wegen der Positiven Definitheit des Betrags gilt bereits, das jeweils beide Ausdrücke größer oder gleich Null sind. Die Null wird aber durch die Addition mit der 1 ausgeschlossen. So folgt $1+(f_n(z) \in \C \backslash \R_{\leq 0}$
+\\
+\\
+Insbesondere:
+\\
+Es ist $\Log( 1 + f_{n}(z))$ für alle $z \in U $ und $n \geq N$ definiert, da aus der obiger Betrachtung hervorgeht, dass $1+f_n(z)$ auf der Einschränkung, auf der Log definiert ist, operiert.
 
 \end{proof}
 
@@ -194,7 +197,8 @@ Abschätzung $ |Log(1+z)|\leq 2|z|$ für alle $z \in \C mit |z| \leq \frac{1}{2}
 
 $$|\Log(1+z)|= |\sum_{n = 1}^\infty (-1)^{(n-1)}\frac{z^{n}}{n}|\leq|z|\sum_{n = 0}^\infty\frac{|z|^{n}}{n + 1}$$
 $$< |z|\cdot (\frac{1}{1}+\frac{1}{2\cdot 2}+\frac{1}{3 \cdot2^2}+...+\frac{1}{(n+1)\cdot2^(n)}) = 2\cdot|z| $$
-
+\\
+\\
 wobei bei dem letzten Gleichheitszeichen der Wert der geometrischen Reihe benutzt wurde. Nämlich $$\sum_{n=0}^{\infty}\frac{1}{(n+1)\cdot2^{(n)}} < \sum_{n=0}^{\infty}\frac{1}{2^{(n)}} = \sum_{n=0}^{\infty}(\frac{1}{2})^n = \frac{1}{1-(\frac{1}{2})} = 2 $$
 
 \end{proof}
@@ -227,9 +231,6 @@ Damit folgt $\zeta_{K}$ ist holomorph auf $\{ s \in \C \colon Re(s) > 1\}$. Der 
  Es ist mit $z = x + iy$ $$|e^z| = e^x $$ da $$|e^z|=|e^{x+iy}|=|e^{x}\cdot e^{iy}|= |e^{x}|\cdot |e^{iy}| = e^{x}\cdot |e^{iy}| = e^x \cdot |cos(y)+isin(y)| $$ $$= e^x\cdot\sqrt{cos^2(x)+sin^2(x)} =e^x\cdot 1$$
 und mithilfe der Betrachtung: Jedes Primideal $\langle0\rangle\subsetneq \mathfrak{p} \subseteq O_{\textit{K}}$ in $\mathfrak{p} \in O_K$ enthält eine Primzahl $p$ und $\mathfrak{p}$ tritt in diesem Fall in der Primidealzerlegung (Siehe Vortrag 5) des Hauptideals $\langle p \rangle=p\cdot O_K$ auf. Weiter gibt es zu jeder Primzahl $p$ nur endlich viele Primideale $\mathfrak{p}\subset O_K$ die $p$ enthalten.Präziser gilt: Für fast alle Primzahlen $p$ gibt es höchstens $[K\colon \Q]$ verschiedene Primideale $\mathfrak{p}\subset O_K$, die $p$ enthalten. 
 \\
-////////// warum gilt die norm von p ist dasselbe wie die kardinalität von ok modulo P größer gleich p
-//////////
-\\
 So folgt:
 
 $$\sum_{\mathfrak{p},p\in \mathfrak{p},p>C}(N_{K\mid \Q}(\mathfrak{p}))^{-Re(s)} \leq [K\colon\Q]\cdot \sum_{p>C}p^{-Re(s)} $$Den letzten Ausdruck kann man mithilfe der Geometrischen Reihe abschätzen.
@@ -252,7 +253,7 @@ wobei sich die Summation in $\sum_{\mathfrak{J}}$ über alle Ideale $\langle0\ra
 
 Zur Vereinfachung, führt man eine beliebige Nummerierung auf der Menge aller Primideale $\langle0\rangle\subsetneq \mathfrak{p} \subseteq O_{\textit{K}}$ ein. Diese hat die Form $$\{\langle0\rangle\subsetneq \mathfrak{p} \subseteq O_{\textit{K}} Primideal \}=\{\mathfrak{p}_1,\mathfrak{p}_2,\mathfrak{p}_3...\}$$Die Abzählbarkeit dieser Menge folgt aus: 
 \\
-?????Angenommen es gibt eine nichtleere Menge $M$ von Idealen für die nicht gilt, dass die Menge der Primideale in einem $O_K$, welcher noetherscher Integritätsring ist, abzählbar ist. Da $O_K$ noethersch, folgt es existiert ein maximales Ideal $a$ in $M$. Dieses kann kein Primideal sein, das heißt es gibt Elemente $b_1,b_2$ in $O_K$ mit $b_1b_2 \in a$ aber $b_1,b_2 \notin a$. Setzte $a_1=(b_1)+a$, $a_2=(b_2)+a$, so ist a $\subsetneq a_1$ und $a \subsetneq a_2$ und $a_1a_2 \subsetneq a$. Aus Maximalitätsgründen enthalten $a_1$ und $a_2$ Produkte von Primidealen, deren Produkte wiederum in $a$ liegen.Widerspruch.????
+Jedes Primideal $\langle0\rangle\subsetneq \mathfrak{p} \subseteq O_{K}$ in $O_K$ enthält eine Primzahl $p$. Die Primideale die in $O_K$ sind und $p$ enthalten, sind genau die Primideale, die in der Faktorisierung des Hauptideals $pO_K$ auftreten (nach Vortrag 5). In der Faktorisierung von $pO_K$ treten aber nur endlich viele Primideale auf, das heißt zu jeder Primzahl $p$ gibt es nur endlich viele Primideale, die $p$ enthalten. Somit besteht die Menge der Primzahlen, die $p$ enthalten aus einer abzählbaren Vereinigung von Abzählbaren Mengen. Die Vereinigung über alle Primzahlen und der Vereinigung aller Primideale, die $p$ enthalten. Abzählbare Vereinigungen abzählbarer Mengen sind wiederum abzählbare Mengen.
 \\
 Sei weiter $s \in \C$ mit $Re(s) > 1$ beliebig, dann ist mit $N_{K\mid \Q}\leq 2$ für jedes $m \in \N$, analog dem \textit{Beweis} (siehe oben). So folgt:$$\prod_{m=1}^{n}\frac{1}{1-N_{K\mid \Q}(\mathfrak{p}_m)^{(-s)}} =\prod_{m=1}^{n}\sum_{k=0}^{\infty}(N_{K\mid \Q}(\mathfrak{p}_m))^{-k\cdot(s)}=\prod_{m=1}^{n}\sum_{k=0}^{\infty}(N_{K\mid \Q}(\mathfrak{p}_m^k))^{(-s)}$$
 Daraus resultiert mit Anwendung der Geometrischen Reihe auf \\

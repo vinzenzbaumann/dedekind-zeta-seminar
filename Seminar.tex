@@ -290,7 +290,21 @@ Betrachte also $d\equiv 1 (\mod 4)$
 \\
  \textit{Beweis}:
  \\
- Dia Aussage über $|O_K^\times|$ wurde in Vortrag 3 bewiesen. Somit verbleibt es die Gleichheitszeichen (1) und (2) zu zeigen. Beginne mit dem (2). Es ist $$L(s,\chi_K)=\sum_{n=1}^{\infty}\frac{\chi_K(n)}{n^s}$$ für alle $s \in \C$ mit $Re(s) > 1$.Da //////////////////////////////////////////////////////////////////////
+ Dia Aussage über $|O_K^\times|$ wurde in Vortrag 3 bewiesen. Somit verbleibt es die Gleichheitszeichen (1) und (2) zu zeigen. Beginne mit dem (2). Es ist $$L(s,\chi_K)=\sum_{n=1}^{\infty}\frac{\chi_K(n)}{n^s}$$ für alle $s \in \C$ mit $Re(s) > 1$. Dies folgt aus folgendem Lemma:
+ \\
+ \\
+ \\
+Sei $f$ eine multiplikative Funktion, sodass die $\sum f_n(n)$ absolut konvergiert. So kann der Wert der Reihe, als ein absolut konvergentes Produkt ausgedrückt werden. Im Spezialfall der strikten Multiplikativität von $f$, erhält man $\sum_{n=1}^{\infty}f_n=\prod_{\mathfrak{p}}$.
+\\
+Beweis:
+\\
+Sei $$P(x)= \prod_{p\leq x}\{1+f(p)+f(p^2)+...\}$$welches sich über alle Primzahlen $p$ erstreckt. Da es ein Produkt von endlicher Anzahl von absolut konvergenter Reihen ist, ist es erlaubt die Reihen zu multiplizieren und gegebenenfalls umzuordnen, ohne den Wert zu verändern. Hierbei wählt man die Form:
+$$f(p_1^{a_1})\cdot f(p_2^{a_2})\cdot f(p_3^{a_3})\cdot....\cdot f(p_{r}^{a_r})=f(p_{1}^{a_1}\cdot p_{2}^{a_2}\cdot p_{3}^{a_3}\cdot ....\cdot p_{r}^{a_r})$$Dies folgt aus der Multiplikativität von $f$. Benutzt man nun die Eindeutigkeit der Primzahlzerlegung/Primidealzerlegung, so folgt, dass $P(x)=\sum_{n \in A}f(n)$ wobei A aus allen $n$ besteht mit Primfaktoren welche kleiner oder gleich $x$  sind. Daraus folgt: $$\sum_{n=1}^{\infty}f(n)-P(x)= \sum_{n \in B}f(n)$$wobei B die Menge derjenigen $n$ ist, die mindestens einen Primfaktor strikt größer $x$ besitzen. Hieraus resultiert:$$|\sum_{n=1}^{\infty}f(n)-P(x)|\leq\sum_{n \in B}|f(n)|\leq\sum_{n > x}|f(n)|$$läuft jetzt $x\to\infty$, so geht der ganz rechte Ausdruck gegen Null, da $\sum|f(n)|$ konvergent ist. So konvergiert $P(x)$ gegen $\sum f(n)$ für $x \to \infty$. Hier ist es noch wichtig zu sehen, dass das unendliche Produkt der Form $\prod1+a_n$ absolut konvergiert, wenn $\sum a_n$ absolut konvergiert. In diesem Fall folgt:$$\sum_{p\leq x}|f(p)+f(p^2)+...| \leq \sum_{p \leq x}(|f(p)|+|f(p^2)|+...))\leq \sum_{n=2}^{\infty}|f(n)|$$Da alle Partialsummen beschränkt sind, folgt mit $\sum_{p}|f(p)+f(p^2)+...|$ konvergiert und daraus folgt die absolute Konvergenz der oben genannten unendlichen Produktes.
+\\
+Im strikt multiplikativem Fall folgt sogar: $f(p^n)=f(p)^n$ und jede Reihe im unendlichen Produkt (von oben) ist eine konvergente geometrische Reihe mit dem Wert $(1-f(p))^{-1}$
+\\
+\\
+In diesem Fall  erhält man $$\sum_{n=1}^{\infty}\frac{f(n)}{n^s}=\prod_{p}\frac{1}{1-f(p)p^{-1}}$$ für $\sum f(n)n^{-1}$ absolut konvergent. Nun setze  $f(n)=\chi_K(n)$ und man erhält:$$L(s,\chi)=\sum_{n=1}{\infty}\frac{\chi(n)}{n^s}=\prod_{p}\frac{1}{1-\chi(p)p^{-1}}$$und damit die Behauptung.
  \\
 Von Nutzen hierbei, ist die Beobachtung $\chi_K \colon \rightarrow \{-1,0,1\}$ ist strikt multiplikativ. Das heißt es gilt $\chi(mn)=\chi(m)\cdot\chi(n)$ für beliebige $m,n \in \N$. Die Fallunterscheidung nach O.B.D.A. $ggT(n,\Delta_K)>1$ hat direkt zur Folge, dass $ggT(nm,\Delta_K)>1$ und daraus resultiert $\chi_K(nm)=0=0\cdot \chi(m)= \chi(m)\cdot \chi(n)$
 Nun bleibt $ggT(n,\Delta_K)=1$, so wie $ggT(m,\Delta_K)=1$ so folgt, nach der Definition der Abbildung für beliebige natürliche Zahlen als Gruppenhomomorphismus $$\chi(mn)=\chi(\bar{n})\cdot \chi(\bar{m})= \chi(m)\cdot \chi(n)$$

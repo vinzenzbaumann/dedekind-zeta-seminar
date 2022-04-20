@@ -83,14 +83,14 @@ $O_{K}$ := \textit{K} $\cap$ $\mathbb{A}$ den \textit{Ganzheitsring} des Zahlkö
 
 \begin{defn}[Idealnorm]
 
-Sei $\textit{K}$ ein Zahlkörper mit Ganzheitsring $O_{K}$ und $\mathfrak{a}$ ein Ideal in $O_{K}$, welches ungleich dem Nullideal ist. So ist die \textit{Idealnorm} definiert durch $$\mathrm{N}_{K \mid \Q}(\mathfrak{a}) := [O_{K} : \mathfrak{a} ] = \vert O_{K} / \mathfrak{a} \vert$$
+Sei $\textit{K}$ ein Zahlkörper mit Ganzheitsring $$\mathrm{N}_{K \mid \Q}(\mathfrak{a}) = |\mathrm{N}(a)|$$ welches ungleich dem Nullideal ist. So ist die \textit{Idealnorm} definiert durch $$\mathrm{N}_{K \mid \Q}(\mathfrak{a}) := [O_{K} : \mathfrak{a} ] = \vert O_{K} / \mathfrak{a} \vert$$
 
 \end{defn}
 
 \begin{note}
-(1) Ist $\mathfrak{a}$ ein Hauptideal $(a)$, dann ist $$N(\mathfrak{a}) = |N_{K\mid \Q}(a)|$$
+(1) Ist $\mathfrak{a}$ ein Hauptideal $\langle a \rangle$, dann ist $$N(\mathfrak{a}) = |N_{K\mid \Q}(a)|$$
 \\
-(2) Die Norm ist multiplikativ. Es ist $N(\mathfrak{a}\cdot \mathfrak{b}) = N(\mathfrak{a})\cdot N(\mathfrak{b})$
+(2) Die Norm ist multiplikativ. Es ist N$(\mathfrak{a}\cdot \mathfrak{b}) = $N$(\mathfrak{a})\cdot N(\mathfrak{b})$
 
 \end{note}
 
@@ -203,7 +203,7 @@ Abschätzung $ |Log(1+z)|\leq 2|z|$ für alle $z \in \C $ mit $ |z| \leq \frac{1
 \begin{proof}
 
 $$|\Log(1+z)|= |\sum_{n = 1}^\infty (-1)^{(n-1)}\frac{z^{n}}{n}|\leq|z|\sum_{n = 0}^\infty\frac{|z|^{n}}{n + 1}$$
-$$< |z|\cdot (\frac{1}{1}+\frac{1}{2\cdot 2}+\frac{1}{3 \cdot2^2}+...+\frac{1}{(n+1)\cdot2^(n)}) = 2\cdot|z| $$
+$$< |z|\cdot (\frac{1}{1}+\frac{1}{2\cdot 2}+\frac{1}{3 \cdot2^2}+...+\frac{1}{(n+1)\cdot2^(n)}+....) = 2\cdot|z| $$
 \\
 \\
 wobei bei dem letzten Gleichheitszeichen der Wert der geometrischen Reihe benutzt wurde. Nämlich $$\sum_{n=0}^{\infty}\frac{1}{(n+1)\cdot2^{(n)}} < \sum_{n=0}^{\infty}\frac{1}{2^{(n)}} = \sum_{n=0}^{\infty}(\frac{1}{2})^n = \frac{1}{1-(\frac{1}{2})} = 2 $$
